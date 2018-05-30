@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.5/css/bootstrap.min.css">
-	<link rel="pingback" href="https://blogs.technet.microsoft.com/visio_ru/xmlrpc.php">	<title>О добавлении визуализаций Visio в отчеты Power BI – О Visio по-русски</title><link rel='dns-prefetch' href='//ajax.aspnetcdn.com' />
+	<link rel="pingback" href="https://blogs.technet.microsoft.com/visio_ru/xmlrpc.php">	<title>Пользовательские шаблоны документов</title><link rel='dns-prefetch' href='//ajax.aspnetcdn.com' />
 <link rel='dns-prefetch' href='//s.w.org' />
 <link rel='stylesheet' id='wds-ratings-css'  href='https://blogs.msdn.microsoft.com/wp-content/plugins/wds-ratings/wds-ratings.css?ver=20161014' type='text/css' media='all' />
 <link rel='stylesheet' id='microsoft-parent-style-css'  href='https://blogs.msdn.microsoft.com/wp-content/themes/microsoft/style.css?ver=02092017' type='text/css' media='all' />
@@ -16,10 +16,10 @@
 <style type="text/css" id="wds-custom-css">
 </style><!-- End Custom CSS -->
 <link rel="shortcut icon" href="https://i1.social.s-msft.com/Forums/GlobalResources/images/Technet/favicon.ico">
-<meta property="og:type" content="article" /><meta property="og:title" content="О добавлении визуализаций Visio в отчеты Power BI" />
-<meta property="og:url" content="https://blogs.technet.microsoft.com/visio_ru/2018/04/16/dobavlenie_visualizacii_visio_v_otchet_powerbi/" />
+<meta property="og:type" content="article" /><meta property="og:title" content="Пользовательские шаблоны документов" />
+<!-- <meta property="og:url" content="https://blogs.technet.microsoft.com/visio_ru/2018/04/16/dobavlenie_visualizacii_visio_v_otchet_powerbi/" /> -->
 <meta property="og:site_name" content="О Visio по-русски" />
-<meta property="og:description" content="В прошлом году была в нашем блоге была опубликована статья, от том как Visio и Power BI прекрасно дополняют друг друга. Есть очень хорошая статья пошагово описывающая процесс: Добавление визуализаций Visio в отчеты Power BI. Единственным не очень очевидным шагом в этой статье можно назвать указание URL-адреса документа MS Visio (этап 5, шаг 3): На..." />
+<meta property="og:description" content="Не секрет, что в нашей работе нам часто приходится создавать документы в которых есть большое количество повторяющихся элементов. Это может быть типовое содержимое и/или типовое оформление..." />
 </head><body class="post-template-default single single-post postid-9 single-format-standard">
 <div id="page" class="site container-fluid">
 	<header id="site-header" class="site-header row" role="banner">
@@ -76,68 +76,75 @@
 
 
 <article id="post-9" class="post-9 post type-post status-publish format-standard hentry category-uncategorized tag-visio-2010 tag-2"><header class="entry-header single">
-		<h1 class="entry-title">О добавлении визуализаций Visio в отчеты Power BI</h1>		<div class="clear-both"></div>
+		<h1 class="entry-title">Пользовательские шаблоны документов</h1>		<div class="clear-both"></div>
 		<div class="entry-meta">
 
 			<span class="byline">
 				<span class="author vcard"><a class="url fn n profile-usercard-hover" data-profile-userid="7197e0e7c765405081b79a85e4fd6a2c" href="https://social.technet.microsoft.com/profile/Surrogate">Alexander Kuzin</a>				</span>
 			</span>
 			<span class="posted-on posted-on-margin">
-				<span class="screen-reader-text"></span><time class="entry-date published updated" datetime="2018-04-16T10:36:23+00:00">April 16, 2018</time>			</span>
+				<span class="screen-reader-text"></span><time class="entry-date published updated" datetime="2018-04-16T10:36:23+00:00">July 40, 2018</time>			</span>
 		</div>
 		<hr>
 	</header><div class="entry-content single">
-		<p>В прошлом году была в нашем блоге была опубликована статья, от том <a href="../../../2017/06/23/polnaja-kartina-biznesa-s-vizualizacijami-visio-v-power-bi.htm">как <strong>Visio</strong> и <strong>Power BI</strong> прекрасно дополняют друг друга</a>.<br />
-<img alt="Gain-complete-insights-with-the-Visio-visualizations-in-Power-BI-Preview" src="Gain-complete-insights-with-the-Visio-visualizations-in-Power-BI-Preview-2.gif" /><br />
-Есть очень хорошая статья пошагово описывающая процесс: <a target="_blank" href="https://support.office.com/ru-ru/article/%D0%94%D0%BE%D0%B1%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B2%D0%B8%D0%B7%D1%83%D0%B0%D0%BB%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D0%B9-visio-%D0%B2-%D0%BE%D1%82%D1%87%D0%B5%D1%82%D1%8B-power-bi-4f09be62-f436-45c2-93b0-4a0f66b1f5a7" rel="noopener">Добавление визуализаций Visio в отчеты Power BI</a>.</p>
-<p>Единственным не очень очевидным шагом в этой статье можно назвать указание URL-адреса документа MS Visio (этап 5, шаг 3):</p>
-<hr>
-<blockquote>
-<ol start="3">
-<li>На полотне отчета введите URL-адрес схемы Visio.</li>
-</ol>
-<p>Если вы не знаете, какой URL-адрес использовать, откройте новую вкладку браузера, перейдите к схеме, сохраненной в OneDrive для бизнеса или SharePoint Online, скопируйте URL-адрес и вставьте его в текстовое поле <strong>Введите URL-адрес файла, чтобы открыть схему Visio</strong> на полотне отчета Power BI.</p>
-<blockquote><p><strong>Примечание</strong>: Строка URL-адреса схемы Visio должна включать параметр WopiFrame.aspx.</p></blockquote>
-</blockquote>
-<hr>
-<h2>Способы как открыть документы в Visio Online</h2>
-В новой вкладке браузера в левом верхнем углу выбираем кнопку запуска приложений <strong>Office 365</strong>.
-<a href="https://blogs.technet.microsoft.com/visio_ru/?attachment_id=7465"><img width="428" height="79" class="alignnone wp-image-7465 size-full" alt="Кнопка запуска приложений Office 365" src="https://msdnshared.blob.core.windows.net/media/2018/04/Wafer.png" /></a><br>
-На появившейся всплывающей панели выбираем онлайн приложение <strong>OneDrive для бизнеса</strong>.
-<a href="https://blogs.technet.microsoft.com/visio_ru/?attachment_id=7475"><img width="511" height="652" class="alignnone wp-image-7475 size-full" alt="" src="https://msdnshared.blob.core.windows.net/media/2018/04/OneDrive.png" /></a><br>
-Находим среди ваших документов сохраненных в облачном хранилище <strong>OneDrive для бизнеса</strong> интересующий вас документ Visio и открываем его в <strong>Visio Online</strong>.<br>
-В онлайн приложении <strong>OneDrive для бизнеса</strong> это возможно сделать двумя способами, предварительно выделив документ:<br>
-1. Выбрать из выпадающего списка команды <strong>Open</strong> (Открыть) над перечнем документов (в верхней части окна).<br>
-<a href="https://blogs.technet.microsoft.com/visio_ru/?attachment_id=7415"><img width="647" height="405" class="alignnone wp-image-7415 size-full" alt="OneDrive: Открыть в Visio Online" src="https://msdnshared.blob.core.windows.net/media/2018/04/OneDriveTop.png" /></a><br>
-2. Выбрать пункт <strong>Open in в Visio Online </strong>(Открыть в Visio Online) в контекстном меню, появившемся после щелчка правой кнопкой мыши по имени документа в перечне документов сохраненных в <strong>OneDrive</strong>.<br>
-<a href="https://blogs.technet.microsoft.com/visio_ru/?attachment_id=7425"><img width="862" height="1013" class="alignnone wp-image-7425 size-full" alt="Через контекстное меню" src="https://msdnshared.blob.core.windows.net/media/2018/04/OneDriveRight.png" /></a><br>
-Также можно открыть документ в <strong>Visio Online</strong> из проводника <strong>Windows Explorer</strong>.<br>
-<a href="https://blogs.technet.microsoft.com/visio_ru/?attachment_id=7435"><img width="1405" height="680" class="alignnone wp-image-7435 size-full" alt="" src="https://msdnshared.blob.core.windows.net/media/2018/04/WindowsExplorerRightClick.png" /></a><br>
-<h2>Как получить гиперссылку, если вы уже открыли документ в Visio Online</h2>
-1.Щелкните мышью по иконке с многоточием (<strong>…</strong>) в правом верхнем углу<br>
-<img width="1426" height="911" class="alignleft size-full wp-image-7975" alt="" src="https://msdnshared.blob.core.windows.net/media/2018/04/VO_step1.png" /><br>
-2.В выпавшем меню выберите команду <strong>Embed</strong><br>
-<img width="1437" height="911" class="alignleft size-full wp-image-7985" alt="" src="https://msdnshared.blob.core.windows.net/media/2018/04/VO_step2.png" /><br>
-3.В нижней части появившегося окна <strong>Embed </strong>вы можете скопировать интересующую вас гиперссылку<br>
-<img width="1601" height="1115" class="alignleft size-full wp-image-8005" alt="" src="https://msdnshared.blob.core.windows.net/media/2018/04/VO_step3.png" /><br>
-<h2>Как получить гиперссылку, из проводника документов <strong>SharePoint</strong></h2>
-1. В проводнике документов отметьте щелчком мыши интересующий вас документ <br>
-<img width="2452" height="1184" class="alignleft size-full wp-image-7935" alt="" src="https://msdnshared.blob.core.windows.net/media/2018/04/SP_step1.png" />
-2.Выберите команду <strong>More</strong>   <img width="1436" height="1100" class="alignleft size-full wp-image-7945" alt="" src="https://msdnshared.blob.core.windows.net/media/2018/04/SP_step2.png" /><br>
-3.Выпавшем меню выбираем команду в <strong>View in Web Browser </strong>(!)<br>
-<img width="1436" height="1181" class="alignleft size-full wp-image-7955" alt="" src="https://msdnshared.blob.core.windows.net/media/2018/04/SP_step3.png" /><br>
-4.Документ откроется в браузере, скопируйте ссылку из адресной браузера<br>
-<img width="1436" height="136" class="alignleft size-full wp-image-8015" alt="" src="https://msdnshared.blob.core.windows.net/media/2018/04/SP_step4.png" /><br>
-<hr></hr>
-Гиперссылку документа, полученную любым из двух вышеуказанных способов вставляем в полотне отчета <strong>PowerBI</strong>.<br>
-<a href="https://blogs.technet.microsoft.com/visio_ru/?attachment_id=7495"><img width="1064" height="648" class="alignnone size-full wp-image-7495" alt="" src="https://msdnshared.blob.core.windows.net/media/2018/04/VisioOnlineLink.png" /></a><br>
+		
+<h2>Определение</h2>
 
-В завершение нажимаем кнопку <strong>Enter</strong> на клавиатуре или <strong>Connect</strong> на полотне отчета.
+<p>Одно из исторически сложившихся определений слова шаблон - <a href="https://ru.wiktionary.org/wiki/%D0%BE%D0%B1%D1%80%D0%B0%D0%B7%D0%B5%D1%86">образец</a>, по которому изготавливаются изделия, одинаковые по форме, размеру и&nbsp;т.&nbsp;п.</p>
+
+<h2>Зачем нужны шаблоны документов</h2>
+
+<p>Не секрет, что в нашей работе нам часто приходится создавать документы в которых есть большое количество повторяющихся элементов. Это может быть типовое содержимое и/или
+типовое оформление.</p>
+
+<p>Например вы потратили время на создание документа, который вы считаете эталонным по содержанию и оформлению, и в перспективе вам придется подготовить ряд подобных документов.</p>
+<p>Некоторые пользователи используют следующий сценарий:</p>
+<p>1. Открывают «эталонный документ»</p>
+<p>2. Сохраняют этот документ под новым именем</p>
+<p>3. Вносят правки в новом целевом файле</p>
+
+<p>Но иногда так случается, что шаг 2 в данном сценарии по ошибке забывают выполнить. Я и сам не раз совершал такую ошибку, и потом мучительно восстанавливал «эталонный документ».</p>
+<p>Еще печальнее, если по такому сценарию работают несколько сотрудников используя тот же самый «эталон» и один из пользователей испортит образцовый документ ! Это очень усложнит работу этой группы на время восстановления «эталона».</p>
+
+<p>Поэтому довольно разумно использовать пользовательские шаблоны документов, чтобы минимизировать время разработки документации в целом. Используя готовый образец типового документа вам не придется &quot;заново изобретать велосипед&quot;.</p>
+<p>При двойном щелчке мышью по иконке документа-шаблона в проводнике , открывается не сам документ, а его <b>КОПИЯ</b>! 
+Это очень удобно, т.к. это позволяет избежать «случайного изменения» образцового документа.</p>
+<h2>Расширения шаблонов в MS Visio</h2>
+<p>В настоящее время в возможно сохранение шаблонов с тремя вариантами расширений:</p>
+<p><img border=0 width=482 height=401 src="Sh1_1.png"></p>
+<h2>Где хранить шаблоны документов</h2>
+<p>Если вы предполагаете работать с шаблоном вместе с вашими коллегами, то имеет смысл разместить его специальной папке на сетевом диске или в облачном хранилище (например <a href="https://onedrive.live.com/about/ru-ru/business/" target="_blank">Microsoft OneDrive</a>.</p>
+Если будете работать с шаблоном единолично, то сохраните шаблон в специальной любом удобном для вас месте.</p>
+<p>После сохранения шаблона укажите путь к папке, в которой вы будете хранить свои шаблоны.</p>
+<p>Открываем вкладку <b>Файл</b> , далее выбираем раздел <b>Параметры</b> самом низу списка
+<p><img border=0 width=1920 height=1080 src="Sh1_2.gif"></p>
+
+ <p>В появившемся окне <b>Параметры Visio</b> переходим в подраздел <b>Дополнительно</b>.</p>
+<p><img border=0 width=940 height=675 src="Sh1_3.png"></p>
+<p>Прокручиваем полосу прокрутки вниз до конца и нажимаем кнопку <b>Расположение файлов</b>.</p>
+<p>1. В окне <b>Расположение файлов</b> нажать кнопку с многоточием (&#8230) правее поля <b>Шаблоны</b>.</p>
+<p><img border=0 width=458 height=338 src="Sh1_4.png"></p>
+<p>2. В проводнике <b>Windows</b> выбрать папку с шаблонами. Можно указать несколько путей к разным  папкам содержащим шаблоны, в качестве разделителя между путями выступает знак точка с запятой (;).</p>
+<p>3. После указания путей к папкам с шаблонами нажимаем кнопку <b>OK</b>.</p>
+<h2>Создание документа из пользовательского шаблона</h2>
+<p>Открываем вкладку <b>Файл</b>, далее выбираем раздел <b>Создать</b> в левой части окна. В правой части окна щелкаем мышью по пункту сортировки шаблонов <b>Категории</b>.</p>
+<p><img border=0 width=863 height=244 src="Sh1_5.png"></p>
+<p>В появившемся окне в списке категорий, вы сможете увидеть папку с вашими пользовательскими шаблонами.</p>
+<p><img border=0 width=757 height=367 src="Sh1_6.png"></p>
+<h2>Рабочее пространство</h2>
+<p>Применение шаблонов неразрывно связано с применением наборов элементов (трафаретов), которые могут быть использованы в ваших целевых документах. В нашем блоге были записи посвященные использованию наборов элементов: <a href="https://blogs.technet.microsoft.com/visio_ru/2017/05/29/gotovye-figury-dlja-raboty-v-visio/">запись №1</a> и <a href="https://blogs.technet.microsoft.com/visio_ru/2017/04/07/nabory-jelementov-v-visio/">запись №2</a>.</p>
+<p>Очень удобно открыв документ иметь все необходимые наборы элементов. Для этого необходимо открыть совместно с вашим шаблоном все необходимые для его работы наборы элементов и сохранить рабочее пространство (т.е. все совместно открытые окна приложения <b>MS Visio</b>.</p>
+<p>Щелкаем мышью по вкладке <b>Файл</b>, в разделе <b >Сведения</b>, выбираем пункт меню <b>Свойства</b>, и далее <b>Дополнительные свойства</b>. </p>
+<p><img border=0 width=1920 height=1080 src="Sh1_7.gif"></p>
+<p>Надо убедиться, что окне <b>Свойства документа</b> в поле <b>Сохранить рабочую область</b> стоит галочка.</p>
+<p><img border=0 width=815 height=1031 src="Sh1_8.png"></p>
+<p>После этого сохранить шаблон еще раз.</p>
+
 	</div><!-- .entry-content -->	<hr>
 	<footer class="entry-footer single">
 					<div class="tags"><span>Tags </span>
 				<span>
-					<a href='../../../tags/power-bi/index.htm' rel="tag">Power BI</a> <a href='../../../tags/sharepoint/index.htm' rel="tag">SharePoint</a> <a href='../../../tags/visio/index.htm' rel="tag">Visio</a> <a href='../../../tags/visio-online/index.htm' rel="tag">Visio Online</a> <a href='../../../tags/how-to/index.htm' rel="tag">Как сделать...</a> <a href='../../../tags/tag-4/index.htm' rel="tag">Советы</a>				</span>		</div>
+					<a href='../../../tags/visio/index.htm' rel="tag">Visio</a> <a href='../../../tags/tag-27/index.htm' rel="tag">Шаблоны</a> <a href='../../../tags/how-to/index.htm' rel="tag">Как сделать...</a> <a href='../../../tags/tag-4/index.htm' rel="tag">Советы</a>				</span>		</div>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-## -->
 
