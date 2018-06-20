@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.5/css/bootstrap.min.css">
-	<link rel="pingback" href="https://blogs.technet.microsoft.com/visio_ru/xmlrpc.php">	<title>Надстройка DBRE</title><link rel='dns-prefetch' href='//ajax.aspnetcdn.com' />
+	<link rel="pingback" href="https://blogs.technet.microsoft.com/visio_ru/xmlrpc.php">	<title>Применение полей в MS Visio</title><link rel='dns-prefetch' href='//ajax.aspnetcdn.com' />
 <link rel='dns-prefetch' href='//s.w.org' />
 <link rel='stylesheet' id='wds-ratings-css'  href='https://blogs.msdn.microsoft.com/wp-content/plugins/wds-ratings/wds-ratings.css?ver=20161014' type='text/css' media='all' />
 <link rel='stylesheet' id='microsoft-parent-style-css'  href='https://blogs.msdn.microsoft.com/wp-content/themes/microsoft/style.css?ver=02092017' type='text/css' media='all' />
@@ -16,13 +16,13 @@
 <style type="text/css" id="wds-custom-css">
 </style><!-- End Custom CSS -->
 <link rel="shortcut icon" href="https://i1.social.s-msft.com/Forums/GlobalResources/images/Technet/favicon.ico">
-<meta property="og:type" content="article" /><meta property="og:title" content="Надстройка DBRE" />
+<meta property="og:type" content="article" /><meta property="og:title" content="Применение полей в MS Visio" />
 <!-- <meta property="og:url" content="https://blogs.technet.microsoft.com/visio_ru/2018/04/16/dobavlenie_visualizacii_visio_v_otchet_powerbi/" /> -->
 <meta property="og:site_name" content="О Visio по-русски" />
 <meta property="og:description" content="Наверняка многие из вас использовали поля в документах MS Word (запись в блоге «Офисное пространстве» о полях.
 В одной из компаний, в которой я работал более 10 лет назад каждая схема в MS Visio выполнялась в виде отдельного документа. Который потом вставлялся в Word как OLE-объект. В некоторых случаях перед вставкой схемы экспортировались в формат TIFF.
 Вы спросите меня зачем такие сложности ?!?!?!" />
-</head><body class="post-template-default single single-post postid-9 single-format-standard">
+</head><body class="post-template-default single single-post postid-8145 single-format-standard">
 <div id="page" class="site container-fluid">
 	<header id="site-header" class="site-header row" role="banner">
 		<div id="site-header-global-wrapper" class="site-header-global-wrapper">
@@ -77,8 +77,9 @@
 
 
 
-<article id="post-9" class="post-9 post type-post status-publish format-standard hentry category-uncategorized tag-visio-2010 tag-2"><header class="entry-header single">
-		<h1 class="entry-title">Надстройка DBRE</h1>		<div class="clear-both"></div>
+<article id="post-8145" class="post-8145 post type-post status-publish format-standard hentry category-uncategorized tag-visio tag-how-to tag-4">
+<header class="entry-header single">
+		<h1 class="entry-title">Применение полей в MS Visio</h1>		<div class="clear-both"></div>
 		<div class="entry-meta">
 
 			<span class="byline">
@@ -90,43 +91,70 @@
 		<hr>
 	</header><div class="entry-content single">
 		
-<h2>Надстройка DBRE снова доступна!</h2>
-Надстройка <strong>Обратная разработка баз данных</strong> (<strong>DBRE</strong>) снова доступна, но только в выпуске <strong>Visio Online Plan 2</strong> (<strong>Visio Pro для Office 365</strong>), причем сейчас поддерживается меньшее число типов баз данных, чем раньше. Таким образом, хорошая новость всё же не лишена недостатков. С другой стороны, довольно много пользователей рады снова получить возможность документировать схемы баз данных SQL Server и Oracle. Поддерживаются всего два типа реляционных баз данных, которые на сегодняшний день являются, пожалуй, самыми популярными.<br>
+		<h2>Поля</h2>
+<p>Наверняка многие из вас использовали поля в документах <strong>MS Word</strong> (<a target="_blank" href="https://blogs.technet.microsoft.com/tasush/2011/06/15/word-2010-2/" rel="noopener">запись в блоге «Офисное пространстве» о полях</a>).</p>
+<p>В одной из компаний, в которой я работал более 10 лет назад каждая схема в <strong>MS Visio</strong> выполнялась в виде отдельного документа. Который потом вставлялся в <strong>Word</strong> как <strong>OLE-объект</strong>. В некоторых случаях перед вставкой схемы экспортировались в формат <strong>TIFF</strong>.</p>
+<p>Вы спросите меня зачем такие сложности ?!?!?! <img src="https://surrogate-tm.github.io/gifs/huh.gif" /></p>
+<p>Каждый лист в документе <strong>Word</strong> содержал в колонтитуле подобные таблицы (основные надписи).</p>
+<p><img width="1240" height="300" src="Sh2_1.png" border="0" /></p>
+<p>В которых с применением полей <strong>Word</strong> заполнялись данные в ячейках этой основной надписи.</p>
+<p>Самым ценным в подобной реализации было автоматическое обновление значений полей в ячейках: <strong>Лист</strong> и <strong>Листов</strong>.</p>
+<p>Коллеги просто не знали, что поля можно использовать и в <strong>MS Visio</strong>. Причем возможностей и различных настроек при использовании полей в <strong>MS Visio</strong> даже больше!</p>
+<p><img width="1920" height="1080" src="Sh2.gif" border="0" /></p>
+<p>На анимированной картинке выше вы можете увидеть некоторые варианты использования полей.</p>
+<p>Все поля в <strong>MS Visio</strong> всегда обновляются автоматически!!!</p>
+<h2>Как вставить поле</h2>
+<p>Активировать вкладку <strong>Вставка</strong> на ленте, в группе <strong>Текст</strong> выбрать команду <strong>Поле</strong>.</p>
+<p><img width="1684" height="250" src="Sh2_2.png" border="0" /></p>
+<p>Также можно воспользоваться комбинацией клавиш - <strong>Ctrl</strong>+<strong>F9</strong>.</p>
+<p>После того как вы вставили поле в ваш документ, вы можете выделить фрагмент текста содержащего поле и вставить в нужном месте.</p>
+<h2>Категории полей</h2>
+<p>После данных действий появится окно <strong>Поле</strong>, с большим количеством возможных категорий полей.</p>
+<p><img width="943" height="547" src="Sh2_3.png" border="0" /></p>
+<h3>Категория Данные фигуры</h3>
+<p>Если у фигуры есть данные в окне <strong>Данные фигуры</strong> (как у верхней фигуры слева в примере на анимированной картинке выше), то эти их можно вывести в этом поле.</p>
+<p><img width="943" height="547" src="Sh2_4.png" border="0" /></p>
+<p>Далеко не все фигуры обладают такими свойствами.</p>
+<h3>Категория Дата/время</h3>
+<p><img width="943" height="547" src="Sh2_5.png" border="0" /></p>
+<p>С возможностью выбора из фиксированного формата данных даты/времени.</p>
+<p><img width="700" height="600" src="Sh2_6.png" border="0" /></p>
+<p>Также можно использовать пользовательский формат данных даты/времени.</p>
+<p><img width="700" height="600" src="Sh2_7.png" border="0" /></p>
+<h3>Категория Сведения о документе</h3>
+<p><img width="943" height="547" src="Sh2_8.png" border="0" /></p>
+<p>Имена полей в этой категории соответствуют именам полей в свойствах документа. К которым можно обратиться так активировать вкладку ленты <strong>Файл</strong>, далее в разделе <strong>Сведения</strong> выбираем кнопку <strong>Свойства</strong>, с выпадающим списком <strong>Дополнительные свойства</strong>.</p>
+<p><img width="1633" height="624" src="Sh2_9.png" border="0" /></p>
+<p>В появившемся окне <strong>Свойства документа</strong> можно заполнить соответствующие поля.</p>
+<p><img width="474" height="600" src="Sh2_10.png" border="0" /></p>
+<h3>Категория Сведения о странице</h3>
+<p><img width="943" height="547" src="Sh2_11.png" border="0" /></p>
+<p>Как раз из-за незнания о существовании в <strong>Visio</strong> возможности вставки поля с количеством страниц в документе и порядкового номера, моим коллегам приходилось внедрять схемы из <strong>Visio</strong> в документы <strong>Word</strong>.</p>
+<h3>Категория Геомерия</h3>
+<p>Эти поля позволяют выводить геометрические параметры фигуры.</p>
+<p><img width="943" height="547" src="Sh2_12.png" border="0" /></p>
+<h3>Категория Сведения об объекте</h3>
+<p><img width="943" height="547" src="Sh2_13.png" border="0" /></p>
+<p>Это сведения о фигуре доступные в окне <strong>Имя фигуры</strong>.</p>
+<p><img width="530" height="545" src="Sh2_14.png" border="0" /></p>
+<p>К которому можно обратиться: активировав вкладку <strong>Разработчик</strong>, в группе <strong>Конструктор фигур</strong> выбрать команду <strong>Имя фигуры</strong>.</p>
+<p><img width="1559" height="249" src="Sh2_15.png" border="0" /></p>
+<h3>Категория Пользовательские ячейки</h3>
+<p>Это ячейки в разделе <a href="https://shapesheet-kb.github.io/ru/pages/sections/Раздел%20User-defined%20Cells.htm">User-defined cells</a> к которым нет доступа через пользовательский интерфейс <strong>MS Visio</strong>. Доступ к ним осуществляется только через таблицу свойств (<strong>ShapeSheet</strong>. <a target="_blank" href="../../../2018/05/21/shapesheet-intro/" rel="noopener">Запись блога с описанием таблицы свойств</a>).</p>
+<p><img width="943" height="547" src="Sh2_16.png" border="0" /></p>
+<p>Далеко не все фигуры обладают такими свойствами.</p>
+<h3>Категория Настраиваемая формула</h3>
+<p>Применение всех вышеуказанных категорий не требует применения формул, производится указание необходимого имени поля через окно <strong>Поле</strong> в соответствующей категории. При выборе данного варианта в поле можно задать формулу с использованием <a target="_blank" href="https://shapesheet-kb.github.io/ru/pages/Visio%202010%20Список%20функций.htm" rel="noopener">функций таблицы свойств</a>.</p>
+<p><strong>Использование данной категории дает максимальные возможности, но требует ознакомления с функциями таблицы свойств (ShapeSheet)</strong>.</p>
+<p><img width="943" height="547" src="Sh2_17.png" border="0" /></p>
+<p>Формула задается после знака равно «=».</p>
 
-Должен сказать, что в 90-х годах я с большим удовольствием пользовался программой InfoModeler до тех пор, пока компанию-разработчика этой программы не купила корпорация Visio, после чего эта технология послужила основой для создания схем модели базы данных в решении <strong>Microsoft Visio</strong>. Конечно, сначала мы также использовали и прямую разработку баз данных, и я часто разрабатывал прототип в <strong>Microsoft Access</strong>, переносил его в Visio, редактировал схему в <strong>Visio</strong> (в особенности индексы), а затем выполнял прямую разработку в SQL Server. Я создавал документацию схемы в <strong>Visio</strong>, потому что была возможность использовать аннотации и выделение цветом, что облегчало ее обсуждение с другими участниками команды и руководителями. Ниже приведен снимок экрана диаграммы схемы из доступного в <strong>SQL Azure</strong> примера AdventureWorksLT с использованием надстройки <strong>DBRE</strong>.<br>
- <img src="DisplayOptions.jpg" alt="Display Options" class="img-center"><br>
-В приведенной выше диаграмме схемы использовались таблицы и выделение цветом, группы были логически сгруппированы внутри контейнеров, а <strong>Параметры базы данных и отображения</strong> изменены для отображения типов данных столбцов.
-<h2>Обратная разработка баз данных</h2>
-В своей другой статье я подробно рассказывал, как выполнить подключение к базе данных <strong>SQL Azure</strong> с помощью надстройки <strong>DBRE</strong> (см. <a href="https://blog.bvisual.net/2016/12/12/reverse-engineering-sql-server-dbs-with-visio-pro-dbre">статью на английском языке</a>), поэтому стоит упомянуть лишь несколько моментов.
-Во-первых, надстройка позволяет выполнять обратную разработку таблиц, представлений, хранимых процедур и функций.<br>
- <img src="https://orbus.blob.core.windows.net/media/2535801/SelectObjectTypes.jpg" alt="Display Options" class="img-center"><br>
-Однако на странице могут быть показаны только таблицы, представления и связи.
-Этот пример схемы базы данных имеет небольшой размер, и на страницу были добавлены все таблицы, представления и связи. Она очень похожа на диаграмму схемы в SQL Server Management Studio, но у нее есть дополнительное преимущество — ее гораздо проще реструктурировать и оптимизировать, так как она является частью первоклассного пакета построения схем.<br>
- <img src="ExtractedSchema.jpg" alt="Display Options" class="img-center">
- <br>
-Таблицы и представления можно добавлять многократно на той же самой странице или на нескольких страницах. Благодаря этому можно создавать страницы только с таблицами (или только с представлениями), и таким образом упростить представление и сделать их более понятными, как это показано на первом снимке экрана в этой статье.<br>
-Реконструированный код можно посмотреть и отредактировать, но это не очень эффективно, поскольку код невозможно извлечь автоматически.<br>
- <img src="ViewingCode.jpg" alt="Display Options" class="img-center"><br>
-<h2>Обзор изменений</h2>
-Эта функция полезна для создания моментальных снимков базы данных в определенный момент времени и может использоваться для последующего сравнения таких снимков с более поздними версиями. Команда <strong>Обновить</strong> (<strong>Refresh</strong>) позволяет выполнить автоматическое сравнение модели в документе <strong>Visio</strong> с текущей схемой базы данных, после чего обнаруженные конфликты отображаются в диалоговом окне и пользователю предлагается обновить модель.<br>
- <img src="Refresh.jpg" alt="Display Options" class="img-center"><br>
-<h2>Моделирование базы данных</h2>
-Шаблон <strong>Схема модели базы данных</strong> (<strong>Database Model Diagram</strong>) не используется в мастере обратной разработки. Этот шаблон позволяет создавать план схемы с использованием образцов фигур из набора элементов, а также для создания связей. Рекомендуется проверить <strong>Параметры моделирования базы данных</strong> (<strong>Database Modeling Preferences</strong>), так как они имеют значение при добавлении столбцов и связей вручную.<br>
- <img src="DatabaseModellingPrefs.jpg" alt="Display Options" class="img-center"><br>
-Параметры <strong>Параметры документа базы данных</strong> (<strong>Database Document Display</strong>) влияют на представление каждого из элементов на схеме. Эти параметры влияют на все страницы документа, поэтому рекомендуется проверить, какой эффект оказывают изменения на размещение элементов на каждой из страниц.<br>
- <img src="DisplayOptions.jpg" alt="Display Options" class="img-center"><br>
-Конечно, теперь отсутствует возможность экспорта проекта схемы, поэтому потребуется повторно внести модель в базу данных. В некоторых случаях это вполне приемлемо, когда один человек создает концептуальный проект схемы, а другой вносит усовершенствования в этот проект для получения более детализированной схемы.<br>
-Однако следует задать вопрос: вероятно, более новые безмодельные шаблоны построения схем баз данных (<strong>Chen’s</strong>, <strong>Crow’s Foot</strong>, <strong>IDEF1X</strong> и <strong>UML Database Notation</strong>) подходят в неменьшей степени? Можно написать сценарий для извлечения таблиц, столбцов и связей из этой схемы, в то время как фигуры в схеме модели базы данных (<strong>Database Model Diagram</strong>) контролируются кодом надстройки и трудно читаются в сценарии.
-<h2>Заключение</h2>
-Возвращение данной надстройки не может не радовать, к тому же она является бесплатной. При этом не следует ожидать каких-то дополнительных возможностей по сравнению со старой версией или какой-либо совместимости с более новыми шаблонами нотации баз данных. Компания <strong>Microsoft</strong> прислушалась к настойчивым просьбам пользователей о возвращении этой надстройки, так как некоторые из них не обновили свои устаревшие версии Visio до актуальной версии. Сегодня эти пользователи могут начать использовать <strong>Visio Online Plan 2</strong>, что вполне совпадает с планами компании <strong>Microsoft</strong> по переводу всех пользователей на версию продукта с облачной подпиской.<br>
-Итак, если вы пользуетесь <strong>Visio Online Plan 2</strong>, нет каких-либо причин отказаться от установки этой надстройки. Надстройку можно скачать по адресу  <a href="https://go.microsoft.com/fwlink/?linkid=835953">https://go.microsoft.com/fwlink/?linkid=835953</a>.<br>
-<br>
-<i>Оригинал статьи <a href="https://mvp.microsoft.com/en-us/PublicProfile/21090">Дэвида Паркера (David О Parker)</a> опубликован на английском языке <a href="https://www.orbussoftware.com/BLOG/DATABASE-REVERSE-ENGINEERING-FOR-VISIO-PRO/">здесь</a></i>.
+
 	</div><!-- .entry-content -->	<hr>
 	<footer class="entry-footer single">
 					<div class="tags"><span>Tags </span>
 				<span>
-					<a href='../../../tags/visio/index.htm' rel="tag">Visio</a></span>		</div>
+					<a href='../../../tags/visio/index.htm' rel="tag">Visio</a> <a href='../../../tags/tag-27/index.htm' rel="tag">Шаблоны</a> <a href='../../../tags/how-to/index.htm' rel="tag">Как сделать...</a> <a href='../../../tags/tag-4/index.htm' rel="tag">Советы</a>				</span>		</div>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-## -->
 
